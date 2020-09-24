@@ -12,10 +12,6 @@
 # balanced("") => true
 # balanced("x") => false
 
-def cap_text(text):
-    return text.capitalize()
-
-
 def balanced(xy_str):
 	x_count = 0
 	for letter in xy_str:
