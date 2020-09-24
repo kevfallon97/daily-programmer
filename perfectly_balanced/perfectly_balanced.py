@@ -12,12 +12,18 @@
 # balanced("") => true
 # balanced("x") => false
 
-def balanced(xy_str):
-	x_count = 0
-	for letter in xy_str:
-		if letter == 'x':
-			x_count += 1
-	if x_count == (len(xy_str) / 2):
-		return True	
-	else:
-		return False
+
+# FIRST ATTEMPT
+# def balanced(xy_str):
+# 	x_count = 0
+# 	for letter in xy_str:
+# 		if letter == 'x':
+# 			x_count += 1
+# 	if x_count == (len(xy_str) / 2):
+# 		return True	
+# 	else:
+# 		return False
+
+# BEST SOLUTION
+def balanced(string):
+    return string.lower().count("x") == string.lower().count("y")
